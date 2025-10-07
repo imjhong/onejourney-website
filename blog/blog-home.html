@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17533300684"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+
+  gtag("config", "AW-17533300684");
+</script>
+<link rel="shortcut icon" href="../images/fevicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funeral Services Blog - Guidance & Support | One Journey</title>
+    <meta name="description" content="Read helpful articles, guides, and resources on funeral planning, religious ceremonies, and grief support from the compassionate team at One Journey.">
+    <link rel="canonical" href="https://onejourney.in/blog/">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Raleway', sans-serif; line-height: 1.7; color: #444; background: #fdfdfd; overflow-x: hidden; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 25px; }
+        a { color: #2E8B57; text-decoration: none; transition: color 0.3s ease; }
+        a:hover { color: #1e2a3a; }
+
+        /* Header */
+        header { background: linear-gradient(135deg, #1e2a3a 0%, #3a4a5a 100%); color: white; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo-link { display: flex; align-items: center; transition: transform 0.3s ease; }
+        .logo-image { height: 70px; width: auto; display: block; }
+        .nav-links { display: flex; list-style: none; gap: 35px; }
+        .nav-links a { color: white; text-decoration: none; font-weight: 500; position: relative; padding: 5px 0; transition: all 0.3s ease; }
+        .nav-links a:hover { color: #ffd700; }
+        .hamburger { display: none; }
+
+        /* Hero Section for Blog */
+        .hero-page { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/least-service-hero.webp') center/cover no-repeat; text-align: center; color: white; padding: 160px 25px 80px 25px; }
+        .hero-page h1 { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 700; }
+        
+        /* --- BLOG HOMEPAGE STYLES --- */
+        .blog-listing { padding: 80px 0; }
+        .section-title { font-family: 'Playfair Display', serif; text-align: center; font-size: 3.2rem; margin-bottom: 4rem; color: #1e2a3a; position: relative; padding-bottom: 15px; font-weight: 700; }
+        .section-title::after { content: ''; width: 100px; height: 4px; background: linear-gradient(90deg, #4CAF50, #2E8B57); position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); border-radius: 5px; }
+        
+        .latest-post { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; margin-bottom: 80px; }
+        .latest-post-image { width: 100%; height: 350px; object-fit: cover; border-radius: 15px; }
+        .latest-post-content h2 { font-family: 'Playfair Display', serif; font-size: 2.2rem; margin-bottom: 15px; }
+        .latest-post-content .post-meta { color: #777; margin-bottom: 15px; }
+        .latest-post-content .post-meta span { margin-right: 15px; }
+        .latest-post-content .post-meta i { margin-right: 5px; }
+        .latest-post-content p { font-size: 1.1rem; margin-bottom: 25px; }
+        .read-more-btn { background: #2E8B57; color: white; padding: 12px 25px; border-radius: 50px; font-weight: 600; display: inline-block; }
+        
+        .post-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .post-card { background: #fff; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.07); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .post-card:hover { transform: translateY(-8px); box-shadow: 0 20px 45px rgba(0,0,0,0.12); }
+        .post-card-image { width: 100%; height: 220px; object-fit: cover; }
+        .post-card-content { padding: 25px; }
+        .post-card-content h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 15px; }
+        .post-card-content h3 a { color: #1e2a3a; }
+        .post-card-content .post-meta { font-size: 0.9rem; }
+        
+        /* Footer & Mobile CTA Bar */
+        footer { background: #151515; color: white; padding: 50px 0; text-align: center; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 35px; margin-bottom: 40px; text-align: left; }
+        .footer-section { padding: 0 15px; }
+        .footer-section h4 { font-family: 'Playfair Display', serif; margin-bottom: 25px; color: #ffd700; font-size: 1.5rem; position: relative; padding-bottom: 10px; }
+        .footer-section h4::after { content: ''; position: absolute; left: 0; bottom: 0; width: 50px; height: 2px; background: #ffd700; }
+        .footer-section ul { list-style: none; padding: 0; }
+        .footer-section ul li { margin-bottom: 12px; }
+        .footer-section ul li a { color: #bbb; text-decoration: none; transition: color 0.3s ease; font-size: 1rem; }
+        .footer-section ul li a:hover { color: #ffd700; }
+        .social-icons { margin-top: 20px; display: flex; gap: 15px; }
+        .social-icons a { color: white; font-size: 1.8rem; transition: color 0.3s ease, transform 0.3s ease; }
+        .social-icons a:hover { color: #ffd700; transform: translateY(-3px); }
+        .copyright { border-top: 1px solid #333; padding-top: 30px; margin-top: 30px; color: #ccc; font-size: 0.95rem; text-align: center; }
+        .footer-links { text-align: center; margin-top: 15px; font-size: 0.95rem; }
+        .footer-links a { color: #bbb; text-decoration: none; transition: color 0.3s ease; }
+        .footer-links a:hover { color: #ffd700; }
+        .mobile-cta-bar { display: none; }
+        @media (min-width: 993px) { .footer-content .footer-section:last-of-type { text-align: left; } .footer-content .footer-section:last-of-type .social-icons { justify-content: flex-start; } }
+        @media (max-width: 992px) { .footer-section { text-align: center; } .footer-section h4::after { left: 50%; transform: translateX(-50%); } .footer-content .footer-section:last-of-type .social-icons { justify-content: center; } }
+        @media (max-width: 768px) {
+            .latest-post { grid-template-columns: 1fr; }
+            body { padding-bottom: 70px; } .logo-image { height: 50px; } .nav-links { display: none; } .hamburger { display: flex; flex-direction: column; cursor: pointer; gap: 6px; z-index: 1001; }
+            .hamburger .bar { width: 25px; height: 3px; background-color: white; transition: all 0.3s ease; }
+            .nav-links.active { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: linear-gradient(135deg, #1e2a3a 0%, #3a4a5a 100%); padding: 20px 0; text-align: center; gap: 20px; }
+            .hamburger.active .bar:nth-child(1) { transform: translateY(9px) rotate(45deg); } .hamburger.active .bar:nth-child(2) { opacity: 0; } .hamburger.active .bar:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+            .mobile-cta-bar { display: flex; position: fixed; bottom: 0; left: 0; width: 100%; background: linear-gradient(135deg, #3a4a5a 0%, #1e2a3a 100%); color: white; padding: 10px 15px; box-shadow: 0 -4px 15px rgba(0,0,0,0.2); z-index: 999; align-items: center; justify-content: space-between; gap: 15px; }
+            .mobile-cta-bar .text-content { flex-grow: 1; text-align: center; font-weight: 500; font-size: 1rem; }
+            .mobile-cta-bar .cta-button { background: #25D366; color: white; padding: 10px 15px; border-radius: 30px; text-decoration: none; font-weight: 600; white-space: nowrap; display: flex; align-items: center; gap: 8px; }
+            .mobile-cta-bar .phone-icon { background-color: #4CAF50; border-radius: 50%; padding: 10px; display: flex; align-items: center; justify-content: center; text-decoration: none; }
+            .mobile-cta-bar .phone-icon i, .mobile-cta-bar .cta-button i { font-size: 1.2rem; color: white; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo-link"><img src="../images/one-journey-white-logo.webp" alt="One Journey Logo" class="logo-image"></a>
+            <div class="hamburger" id="hamburger-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../funeral-service-in-delhi-ncr.html">Delhi NCR</a></li>
+                <li><a href="../funeral-service-in-Bangalore.html">Bangalore</a></li>
+                <li><a href="../index.html#about">About Us</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-page">
+            <div class="hero-content">
+                <h1>The One Journey Blog: Guidance & Support</h1>
+            </div>
+        </section>
+
+        <div class="blog-listing">
+            <div class="container">
+                <div class="latest-post">
+                    <a href="antim-sanskar-in-bangalore-guide.html"><img src="../images/blog-bangalore-guide.webp" alt="A serene display of flowers and lamps for a Hindu prayer meeting in Bangalore" class="latest-post-image"></a>
+                    <div class="latest-post-content">
+                        <div class="post-meta">
+                            <span><i class="fas fa-calendar-alt"></i> August 8, 2025</span>
+                            <span><i class="fas fa-tag"></i> Bangalore Services</span>
+                        </div>
+                        <h2><a href="antim-sanskar-in-bangalore-guide.html">Antim Sanskar in Bangalore: Rituals and Arrangements Explained</a></h2>
+                        <p>A complete guide to arranging a Hindu funeral (Antim Sanskar) in Bangalore. Learn about pre-cremation rituals, Dah Sanskar, and post-cremation ceremonies like Vaikunta Samaradhane.</p>
+                        <a href="antim-sanskar-in-bangalore-guide.html" class="read-more-btn">Read More</a>
+                    </div>
+                </div>
+
+                <h2 class="section-title" style="margin-top: 80px;">All Articles</h2>
+
+                <div class="post-grid">
+                    <div class="post-card">
+                        <a href="crematoriums-in-bangalore-locations-timings-costs.html"><img src="../images/blog-bangalore-crematoriums.webp" alt="Entrance gate of the Hebbal Electric Crematorium in Bangalore" class="post-card-image"></a>
+                        <div class="post-card-content">
+                            <h3><a href="crematoriums-in-bangalore-locations-timings-costs.html">Crematoriums in Bangalore — Locations, Timings & Costs</a></h3>
+                            <div class="post-meta"><span><i class="fas fa-tag"></i> Bangalore Guides</span></div>
+                        </div>
+                    </div>
+                    <div class="post-card">
+                        <a href="cost-of-cremation-in-delhi-ncr.html"><img src="../images/blog-delhi-cremation-cost.webp" alt="A serene view of a cremation ground in Delhi" class="post-card-image"></a>
+                        <div class="post-card-content">
+                            <h3><a href="cost-of-cremation-in-delhi-ncr.html">Cost of Cremation in Delhi NCR — 2025 Pricing Guide</a></h3>
+                            <div class="post-meta"><span><i class="fas fa-tag"></i> Funeral Planning</span></div>
+                        </div>
+                    </div>
+                    <div class="post-card">
+                        <a href="emergency-funeral-arrangements-delhi-ncr.html"><img src="../images/blog-emergency-delhi.webp" alt="A calm and respectful night setting representing 24/7 emergency funeral services in Delhi" class="post-card-image"></a>
+                        <div class="post-card-content">
+                            <h3><a href="emergency-funeral-arrangements-delhi-ncr.html">Emergency Funeral Arrangements in Delhi at Night</a></h3>
+                            <div class="post-meta"><span><i class="fas fa-tag"></i> Emergency Services</span></div>
+                        </div>
+                    </div>
+                    <div class="post-card">
+                        <a href="funeral-van-services-delhi.html"><img src="../images/blog-van-services.webp" alt="A dignified and well-maintained hearse van ready for funeral service" class="post-card-image"></a>
+                        <div class="post-card-content">
+                            <h3><a href="funeral-van-services-delhi.html">Funeral Van Services in Delhi: Availability & Pricing</a></h3>
+                            <div class="post-meta"><span><i class="fas fa-tag"></i> Transportation</span></div>
+                        </div>
+                    </div>
+                    <div class="post-card">
+                        <a href="cremation-ground-list-delhi-ncr.html"><img src="../images/blog-delhi-crematoriums.webp" alt="Entrance of the serene Lodhi Road Crematorium in Delhi" class="post-card-image"></a>
+                        <div class="post-card-content">
+                            <h3><a href="cremation-ground-list-delhi-ncr.html">List of Major Cremation Grounds in Delhi NCR</a></h3>
+                            <div class="post-meta"><span><i class="fas fa-tag"></i> Local Guides</span></div>
+                        </div>
+                    </div>
+                    <div class="post-card">
+                        <a href="what-to-do-after-death-in-india.html"><img src="../images/blog-what-to-do.webp" alt="A family member making an important phone call for funeral arrangements" class="post-card-image"></a>
+                        <div class="post-card-content">
+                            <h3><a href="what-to-do-after-death-in-india.html">What to Do Immediately After a Death in India: A Checklist</a></h3>
+                            <div class="post-meta"><span><i class="fas fa-tag"></i> Funeral Planning</span></div>
+                        </div>
+                    </div>
+                    <div class="post-card">
+                        <a href="importance-of-asthi-visarjan-in-haridwar.html"><img src="../images/blog-asthi-visarjan.webp" alt="Devotees performing Asthi Visarjan ceremony at Har Ki Pauri, Haridwar" class="post-card-image"></a>
+                        <div class="post-card-content">
+                            <h3><a href="importance-of-asthi-visarjan-in-haridwar.html">The Importance of Asthi Visarjan in Haridwar</a></h3>
+                            <div class="post-meta"><span><i class="fas fa-tag"></i> Hindu Rituals</span></div>
+                        </div>
+                    </div>
+                    <div class="post-card">
+                        <a href="understanding-chautha-tehravin-ceremonies.html"><img src="../images/blog-chautha-tehravin.webp" alt="A serene prayer meeting arrangement with a framed photograph and floral tributes" class="post-card-image"></a>
+                        <div class="post-card-content">
+                            <h3><a href="understanding-chautha-tehravin-ceremonies.html">Understanding the Chautha and Tehravin Ceremonies</a></h3>
+                            <div class="post-meta"><span><i class="fas fa-tag"></i> Hindu Rituals</span></div>
+                        </div>
+                    </div>
+                     <div class="post-card">
+                        <a href="guide-to-hindu-cremation-ceremony.html"><img src="../images/blog-hindu-cremation.webp" alt="A pandit performing sacred Hindu cremation rituals by a holy river" class="post-card-image"></a>
+                        <div class="post-card-content">
+                            <h3><a href="guide-to-hindu-cremation-ceremony.html">A Step-by-Step Guide to Arranging a Hindu Cremation Ceremony</a></h3>
+                            <div class="post-meta"><span><i class="fas fa-tag"></i> Hindu Rituals</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section"><h4>Quick Links</h4><ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#services">Services</a></li><li><a href="../index.html#about">About Us</a></li><li><a href="../index.html#testimonials">Testimonials</a></li><li><a href="../index.html#faq">FAQ</a></li><li><a href="../index.html#contact">Contact</a></li></ul></div>
+                <div class="footer-section"><h4>Our Services</h4><ul><li><a href="../complete-funeral-services.html">Complete Funeral Services</a></li><li><a href="../asthi-visarjan-services.html">Asthi Visarjan</a></li><li><a href="../chautha-tehravin-services.html">Chautha & Tehravin</a></li><li><a href="../pet-cremation-service.html">Pet Services</a></li><li><a href="../book-pandit-for-funeral-service.html">Book a Pandit</a></li></ul></div>
+                <div class="footer-section"><h4>Religious Support</h4><ul><li><a href="../hindu-funeral-services.html">Hindu Services</a></li><li><a href="../islamic-funeral-services.html">Islamic Services</a></li><li><a href="../christian-funeral-services.html">Christian Services</a></li><li><a href="../sikh-funeral-services.html">Sikh Services</a></li><li><a href="../buddhist-jain-funeral-services.html">Buddhist & Jain Services</a></li><li><a href="../secular-funeral-services.html">Secular Services</a></li></ul></div>
+                <div class="footer-section"><h4>Connect With Us</h4><div class="social-icons"><a href="https://www.facebook.com/onejourney.in"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="https://www.instagram.com/onejourney.in/"><i class="fab fa-instagram"></i></a><a href="https://www.linkedin.com/in/one-journey-funeral-services-52477437a/"><i class="fab fa-linkedin-in"></i></a></div><p style="margin-top: 20px; font-size: 0.9rem; color: #bbb;">Follow us for updates.</p></div>
+            </div>
+            <div class="copyright"><p>&copy; 2025 One Journey Funeral Services. All Rights Reserved.</p></div>
+            <div class="footer-links"><a href="../privacy-policy.html">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a> | <a href="../terms-and-conditions.html">Terms and Conditions</a></div>
+        </div>
+    </footer>
+    <div id="mobileCtaBar" class="mobile-cta-bar"><a href="tel:+919355676676" class="phone-icon"><i class="fas fa-phone-alt"></i></a><div class="text-content">Need Immediate Help?</div><a href="https://wa.me/919355676676" target="_blank" class="cta-button">WhatsApp Us <i class="fab fa-whatsapp"></i></a></div>
+    <script>
+        const navLinks = document.getElementById('nav-links');
+        const hamburger = document.getElementById('hamburger-menu');
+        hamburger.addEventListener('click', () => { hamburger.classList.toggle('active'); navLinks.classList.toggle('active'); });
+    </script>
+</body>
+</html>
